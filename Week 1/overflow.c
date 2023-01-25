@@ -1,9 +1,26 @@
-#include<stdio.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 
-int main(int argc, char *argv[])
+struct Overflow
 {
-    printf("This is a test.\n");
+  char string1[5];
+  char string2[5];
+};
 
-    return(EXIT_SUCCESS);
+int main (int argc, char *argv[])
+{
+  struct Overflow ov = {"", "test"};
+  printf ("string1 = %s, string2 = %s\n\n", ov.string1, ov.string2);
+  printf ("Enter a 4 character string: ");
+  gets(ov.string1);
+  printf ("\nstring1 = %s, string2 = %s\n\n", ov.string1, ov.string2);
+  if (strncmp(ov.string1, ov.string2, 4) == 0)
+  {
+    printf("Equal\n");
+  } else {
+    printf("Not Equal\n");
+  }
+
+  return(EXIT_SUCCESS);
 }
