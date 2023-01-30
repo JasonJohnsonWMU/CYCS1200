@@ -4,8 +4,8 @@
 
 struct Overflow
 {
-  char string1[5];
-  char string2[5];
+  char string1[4];
+  char string2[4];
 };
 
 int main (int argc, char *argv[])
