@@ -14,7 +14,7 @@ int main(int argc, char *argv[]) {
 
 // Now we'll use a loop to print all of the arguments
   for(int i = 0; i < argc; i++) {
-    printf("Parameter %d: %s\n", i, argv[i]);
+    printf("Argument %d: %s\n", i, argv[i]);
   }
 
 // Here we end the program, indicating that it ran successfully
