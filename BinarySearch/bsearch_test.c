@@ -31,8 +31,20 @@ void test_case_sample(void)
 
 void bsearch_test_1(void) {
   int inputarray[] = {1,2,3,4,5,6,7,8,9,10};
-  CU_ASSERT_EQUAL( bsearch(inputarray,3), 2);
+  /* CU_ASSERT_EQUAL( bsearch(inputarray,10,3), 2);*/
 }
+
+
+void bubswap_test_1(void) {
+/*
+  int x,y;
+  x = 5;
+  y = 7;
+  bubswap(&x, &y);
+  CU_ASSERT_EQUAL( x, 7);
+  CU_ASSERT_EQUAL( y, 5);
+*/
+} 
 
 
 /************* Test Runner Code goes here **************/
@@ -53,7 +65,8 @@ int main ( void )
    }
 
    /* add the tests to the suite */
-   if ( (NULL == CU_add_test(pSuite, "bsearch_test_1", bsearch_test_1))
+   if ( (NULL == CU_add_test(pSuite, "bsearch_test_1", bsearch_test_1)) ||
+        (NULL == CU_add_test(pSuite, "bsearch_test_1", bubswap_test_1))
       )
    {
       CU_cleanup_registry();

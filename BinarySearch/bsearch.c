@@ -3,7 +3,6 @@
 /* headers below included for debugging purposes */
 #include <stdio.h>
 
-
 /**
  * Finds the specified target in the array.
  * Algorithm: Binary Search
@@ -36,6 +35,8 @@ int bsearch (int inputarray[], int size, int searchtarget )
    return -1;
 }
 
+
+/*
 int main()
 {
    int inputarray[] = {1,2,3,4,5,6,7,8,9,10};
@@ -48,7 +49,14 @@ int main()
    printf("The returned value is: %d\n", bsearch(inputarray, arraysize, 0));
    printf("The returned value is: %d\n", bsearch(inputarray, arraysize, 5));
    printf("The returned value is: %d\n", bsearch(inputarray, arraysize, 334654));
+
+   int x,y;
+   x = 5;
+   y = 3;
+   bubswap(&x, &y);
+   printf("x = %d and y = %d\n", x, y);
+
    return 0;
 }
-
+*/
 
