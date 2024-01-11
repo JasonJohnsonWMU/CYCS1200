@@ -1,7 +1,7 @@
 /* We'll use this program to explore the main function input
 parameters argc and argv */
 
-// Use stdio for cli output and stdlib for exit status
+// Use stdio for cli output and stdlib for exit statu
 #include<stdio.h>
 #include<stdlib.h>
 
